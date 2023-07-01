@@ -1,0 +1,211 @@
+*{margin: 0;
+padding: 0;font-family: 'Rubik', sans-serif;}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to left,#fff 83.5%, #c3f5ff 20%);
+}
+.navsection{
+    width: 100%; height: 20vh; background-color: yellow;
+    display: flex; justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to top,#fff 70%, #c3f5ff 30%);
+}
+
+.logo{
+    width:25%;
+color: #fff;
+background-image: linear-gradient(#8d98e3 40%, #854fee 60%);
+padding-left: 100px;
+box-sizing: border-box;
+}
+.logo h1{
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    animation: aagepiche 2s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes aagepiche {
+    from{padding-left:40px ;}
+    to{padding-right: 40px;}
+}
+nav{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 900;
+    position: relative;
+}
+nav a:first-child{
+    color: #4458dc;
+}
+nav a:before{
+    content:"";
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    border-bottom: 2px solid #4458dc;
+    transition: all 0.4s linear;
+}
+nav a:hover:before{
+    width: 100%;
+}
+main{
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.rightside{
+border-radius:30% 70% 70% 30% / 30% 30% 70% 70%;
+background-color:#e8fbff ;
+}
+.rightside img{
+    max-width: 500px;
+    height: auto;
+}
+.leftside{
+    color: #000;
+text-transform: uppercase;
+}
+.leftside h3{
+    font-size: 40px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.leftside h3:after{
+    content: "";
+    width: 450px;
+    height:3px;
+    position: absolute;
+    top: 43%;
+    left: 20%;
+background-color: #000;
+}
+.leftside h1{
+margin-top: 20px;
+font-size:60px ;
+margin-bottom: 25px;
+}
+.leftside h2{
+    margin-bottom: 35px;
+    font-weight: 300;
+    word-spacing: 4px;
+}
+.leftside .btn1{
+text-decoration: none;
+font-weight: 900;
+font-size: 14px;
+text-align: center;
+padding: 12px 25px;
+cursor: pointer;
+text-transform: uppercase;
+border-radius: 5px;
+display: inline-block;
+margin-right: 50px;
+color: #fff;
+letter-spacing: 0;
+background-image: linear-gradient(to right,#4458dc 0%, #854fee 100%),radial-gradient(circle at top left, #4458dc, #854fee);
+border: double 2px transparent;
+box-shadow: 0 10px 30px rgba(118, 85, 225, .3);
+}
+.leftside .btn1:hover{
+    border: 2px solid #4458dc;
+color: #222;
+background-color: #fff;
+box-shadow: none;
+background-image: none;
+}
+.leftside .btn2{
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 14px;
+    text-align: center;
+    padding: 12px 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 50px;
+    border: 2px solid #4458dc;
+    color: #222;
+    background-color: #fff;
+    box-shadow: none;
+    }
+    .leftside .btn2:hover{
+        color: aqua;
+    }
+
+    /* About me Section */
+    #about {
+        padding: 15rem 0;
+    }
+    #about .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    #about .left {
+        padding: 2rem;
+        text-align: center;
+    }
+    #about .left .card {
+        box-shadow: 0px 0px 20px #4705fc33;
+        padding: 3rem;
+        border-radius: 12px;
+        min-height: 400px;
+    }
+    #about .left .card .img {
+        width: 70px;
+        height: 70px;
+        margin: 0 auto;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-bottom: 2rem;
+    }
+    #about .left .card .img img {
+        object-fit: cover;
+    }
+    #about .left .card .card-desc {
+        color: var(--secondary-gray);
+        margin-bottom: 2rem;
+    }
+    #about .left .card .card-name {
+        font-size: 2rem;
+        margin-bottom: 0.2rem;
+    }
+    #about .left .card .card-sub-title {
+        font-size: 1.4rem;
+    }
+    #about .subheading {
+        color: var(--primary-color);
+        margin-bottom: 1rem;
+    }
+    #about .right .slogan {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    #about .right .right-text {
+        color: var(--secondary-gray);
+    }
+    @media only screen and (max-width: 768px) {
+        #about .wrapper {
+            flex-direction: column-reverse;
+            text-align: center;
+        }
+        #about .right .buttons {
+            flex-direction: column;
+        }
+        #about .right .buttons a {
+            width: 100%;
+            text-align: center;
+        }
+    }
