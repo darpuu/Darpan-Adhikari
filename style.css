@@ -96,14 +96,14 @@ text-transform: uppercase;
 background-color: #000;
 }
 .leftside h1{
-margin-top: 20px;
-font-size:60px ;
-margin-bottom: 25px;
+margin-top: 1.3020833333333333vw;
+font-size:3.90625vw;
+margin-bottom: 1.6276041666666667vw;
 }
 .leftside h2{
-    margin-bottom: 35px;
+    margin-bottom: 2.2786458333333335vw;
     font-weight: 300;
-    word-spacing: 4px;
+    word-spacing: 0.2604166666666667vw;
 }
 .leftside .btn1{
 text-decoration: none;
